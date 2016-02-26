@@ -47,7 +47,8 @@ SCRAPER_CONFIG = {
     'priority_mode': os.environ.get('PRIORITY_MODE', 'const'),
 }
 
-# something
+# scraping
+SCRAPING_USE_CACHE = True
 SCRAPING_TASKS_CONFIG = os.environ.get(
     'SCRAPING_TASKS_CONFIG', 'scrapingtasks.json')
 SCRAPING_TASKS = json.loads(open(SCRAPING_TASKS_CONFIG, 'r').read())
